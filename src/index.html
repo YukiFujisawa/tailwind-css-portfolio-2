@@ -3,24 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>tailwind-css-template</title>
-    <meta name="description" content="Tailwind CSS 開発用のテンプレートです。" />
+    <title>tailwind-css-portfolio-2</title>
+    <meta name="description" content="Tailwind CSS ポートフォリオサイト / 1カラム" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body>
-    <header class="px-6">
-      <h1 class="w-40">
-        <a href="">
-          <img alt="ロゴ" src="../images/logo_og.jpg" />
-        </a>
-      </h1>
+
+  <body class="font-['Hiragino_Kaku_Gothic_ProN'] text-[14.4px]">
+    <header
+      class="mx-auto my-0 flex h-[100px] max-w-[960px] flex-col items-center justify-center gap-[13px] px-[4%] pt-[6px] pb-1 sm:h-[270px] sm:flex-row sm:justify-between sm:pt-1"
+    >
+      <h1><img src="../images/logo.svg" alt="logo" /></h1>
+      <nav>
+        <ul class="flex items-center justify-center gap-5 text-[12.8px] sm:gap-[30px] sm:pb-1 sm:text-[14.4px]">
+          <li>About</li>
+          <li>Works</li>
+          <li>News</li>
+          <li>Contact</li>
+          <li><img class="w-[20px]" src="../images/insta.png" alt="" /></li>
+        </ul>
+      </nav>
     </header>
-    <main class="px-6 py-6">
-      <!-- カスタムCSSサンプル -->
-      <!-- "btn-blue"は、index.cssに定義済み。 -->
-      <button class="btn-blue">サンプル</button>
+    <main>
+      <!-- スマホ用メインビジュアル -->
+      <img class="h-[420px] w-[100%] object-cover sm:hidden" src="../images/mainvisual-sp.jpeg" alt="mainvisual" />
+      <!-- PC用メインビジュアル -->
+      <img class="hidden h-[420px] w-[100%] object-cover sm:inline" src="../images/mainvisual.jpeg" alt="mainvisual" />
+      <section class="mx-auto my-0 max-w-[960px] px-[4%] pt-[80px]">
+        <h2 class="text-center text-[24px] font-bold">About</h2>
+        <p class="mt-10">Xxxxx Ashley</p>
+        <p class="mt-[30px]">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</p>
+        <p>tel: 000-0000-0000</p>
+        <p>url: www.xxxxxx.jp</p>
+        <p>mail: xxx@xxxxxx.jp</p>
+        <p class="mt-[30px]">
+          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </section>
+      <section class="mx-auto my-0 max-w-[960px] px-[4%] pt-[70px] sm:pt-[130px]">
+        <h2 class="text-center text-[24px] font-bold">Works</h2>
+        <ul class="mx-auto my-0 mt-10 flex flex-wrap justify-between gap-[29px] sm:mt-[65px] sm:gap-[23px]">
+          <li class="sm:w-[30%]"><img src="../images/item1.jpeg" alt="" /></li>
+          <li class="sm:w-[30%]"><img src="../images/item2.jpeg" alt="" /></li>
+          <li class="sm:w-[30%]"><img src="../images/item3.jpeg" alt="" /></li>
+          <li class="sm:w-[30%]"><img src="../images/item4.jpeg" alt="" /></li>
+          <li class="sm:w-[30%]"><img src="../images/item5.jpeg" alt="" /></li>
+          <li class="sm:w-[30%]"><img src="../images/item6.jpeg" alt="" /></li>
+        </ul>
+      </section>
+      <section class="mx-auto my-0 max-w-[960px] px-[4%] pt-[93px] sm:pt-[130px]">
+        <h2 class="text-center text-[24px] font-bold">News</h2>
+        <dl class="mt-10 px-5 sm:flex sm:flex-wrap">
+          <dt class="border-t-[1px] pt-[15px] sm:w-[18%] sm:p-[15px]">2020.XX.XX</dt>
+          <dd class="pb-[15px] sm:w-[82%] sm:border-t-[1px] sm:p-[15px]">
+            デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。
+          </dd>
+          <dt class="border-t-[1px] pt-[15px] sm:w-[18%] sm:p-[15px]">2020.XX.XX</dt>
+          <dd class="pb-[15px] sm:w-[82%] sm:border-t-[1px] sm:p-[15px]">
+            ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
+          </dd>
+          <dt class="border-t-[1px] pt-[15px] sm:w-[18%] sm:p-[15px]">2019.XX.XX</dt>
+          <dd class="pb-[15px] sm:w-[82%] sm:border-t-[1px] sm:p-[15px]">
+            【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+          </dd>
+          <dt class="border-t-[1px] pt-[15px] sm:w-[18%] sm:p-[15px]">2019.XX.XX</dt>
+          <dd class="pb-[15px] sm:w-[82%] sm:border-t-[1px] sm:p-[15px]">
+            デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。
+          </dd>
+          <dt class="border-t-[1px] pt-[15px] sm:w-[18%] sm:border-b-[1px] sm:p-[15px]">2019.XX.XX</dt>
+          <dd class="border-b-[1px] pb-[15px] sm:w-[82%] sm:border-t-[1px] sm:p-[15px]">
+            【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+          </dd>
+        </dl>
+      </section>
+      <section class="mx-auto my-0 max-w-[960px] px-[4%] pt-[70px] sm:pt-[130px]">
+        <h2 class="text-center text-[24px] font-bold">Contact</h2>
+        <form method="post" action="./index.html">
+          <div class="flex flex-col gap-[10px]">
+            <div class="mt-10 sm:flex">
+              <label class="sm:w-[15%]" for="name">NAME</label>
+              <input
+                class="w-full border p-[10px] text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring sm:w-[85%]"
+                id="name"
+                type="text"
+                name="name"
+                maxlength="100"
+              />
+            </div>
+            <div class="sm:flex">
+              <label class="sm:w-[15%]" for="email">E-mail</label>
+              <input
+                class="w-full border p-[10px] text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring sm:w-[85%]"
+                id="email"
+                type="email"
+                name="email"
+                maxlength="100"
+              />
+            </div>
+            <div class="sm:flex">
+              <label class="sm:w-[15%]" for="msg">MESSAGE</label>
+              <textarea
+                class="w-full border p-[10px] text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring sm:w-[85%]"
+                id="msg"
+                name="msg"
+                rows="6"
+              >
+              </textarea>
+            </div>
+            <div class="mx-auto mt-[20px]">
+              <input type="submit" value="送信" class="h-[53px] w-[200px] border bg-black text-white" />
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
+    <footer class="mt-[70px] flex h-[35px] items-center justify-center bg-[#24292e] py-0 text-white">
+      <div class="mx-auto my-0 max-w-[960px]">
+        <p class="text-[10px]">© 2020 My Work</p>
+      </div>
+    </footer>
   </body>
 </html>
