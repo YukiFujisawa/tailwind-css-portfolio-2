@@ -26,17 +26,24 @@
       </nav>
     </header>
     <main>
-      <!-- スマホ用メインビジュアル -->
-      <img class="h-[420px] w-[100%] object-cover sm:hidden" src="../images/mainvisual-sp.jpeg" alt="mainvisual" />
-      <!-- PC用メインビジュアル -->
-      <img class="hidden h-[420px] w-[100%] object-cover sm:inline" src="../images/mainvisual.jpeg" alt="mainvisual" />
+      <picture>
+        <source srcset="../images/mainvisual.jpeg" media="(min-width: 640px)" />
+        <img class="h-[420px] w-[100%] object-cover" src="../images/mainvisual-sp.jpeg" alt="サンプル画像" />
+      </picture>
       <section class="mx-auto my-0 max-w-[960px] px-[4%] pt-[80px]">
         <h2 class="text-center text-[24px] font-bold">About</h2>
-        <p class="mt-10">Xxxxx Ashley</p>
+        <ul class="mt-10">
+          <li>Xxxxx Ashley</li>
+          <li class="mt-[30px]">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+          <li>tel: 000-0000-0000</li>
+          <li>url: www.xxxxxx.jp</li>
+          <li>mail: xxx@xxxxxx.jp</li>
+        </ul>
+        <!-- <p class="mt-10">Xxxxx Ashley</p>
         <p class="mt-[30px]">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</p>
         <p>tel: 000-0000-0000</p>
         <p>url: www.xxxxxx.jp</p>
-        <p>mail: xxx@xxxxxx.jp</p>
+        <p>mail: xxx@xxxxxx.jp</p> -->
         <p class="mt-[30px]">
           プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
           テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
